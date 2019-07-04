@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Color Theme Swatches in Hex */
+.Kopie-van-Flat-UI-1-hex { color: #2B3D50; }
+.Kopie-van-Flat-UI-2-hex { color: #E64B3B; }
+.Kopie-van-Flat-UI-3-hex { color: #EBEFF0; }
+.Kopie-van-Flat-UI-4-hex { color: #3497DB; }
+.Kopie-van-Flat-UI-5-hex { color: #2880B8; }
+
+/* Color Theme Swatches in RGBA */
+.Kopie-van-Flat-UI-1-rgba { color: rgba(43, 61, 80, 1); }
+.Kopie-van-Flat-UI-2-rgba { color: rgba(230, 75, 59, 1); }
+.Kopie-van-Flat-UI-3-rgba { color: rgba(235, 239, 240, 1); }
+.Kopie-van-Flat-UI-4-rgba { color: rgba(52, 151, 219, 1); }
+.Kopie-van-Flat-UI-5-rgba { color: rgba(40, 128, 184, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Kopie-van-Flat-UI-1-hsla { color: hsla(210, 30, 24, 1); }
+.Kopie-van-Flat-UI-2-hsla { color: hsla(5, 77, 56, 1); }
+.Kopie-van-Flat-UI-3-hsla { color: hsla(191, 14, 93, 1); }
+.Kopie-van-Flat-UI-4-hsla { color: hsla(204, 69, 53, 1); }
+.Kopie-van-Flat-UI-5-hsla { color: hsla(203, 64, 43, 1); }

@@ -1,0 +1,35 @@
+{
+  "short_name": "Kot App",
+  "name": "Kot App",
+  "icons": [
+    {
+      "src": "icons/72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/Login",
+  "display": "standalone",
+  "theme_color": "#E64B3B",
+  "background_color": "#EBEFF0"
+}

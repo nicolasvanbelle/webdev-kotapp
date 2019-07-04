@@ -1,0 +1,178 @@
+:root{
+  --primary-color: #E64B3B;
+  --secondary-color: #2B3D50;
+  --background-color: #EBEFF0;
+  --color3: #3497DB;
+  --color4: #2880B8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root{
+  height: 100vh;
+  transition: 0.5s;
+}
+
+.page{
+  height: 100%;
+  display: grid;
+  grid-template-rows: 9% 9% 39% 39%;
+  grid-row-gap: 1%;
+  overflow: hidden;
+}
+
+button{
+  position: relative;
+  bottom: 20%;
+  margin: 0 auto;
+  width: 80%;
+  height: 7vh;
+  margin-top: 20px;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-width: thin;
+  color: var(--background-color);
+  border-radius: 100px;
+  border-style: solid;
+  padding-left: 10px;
+  font-size: 100%;
+}
+
+.btn-secondary{
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-small{
+  width: 7vh;
+}
+
+input{
+  background-color: transparent;
+  width: 90%;
+  height: 7vh;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  border-radius: 10vh;
+  border-color: var(--primary-color);
+  border-style: solid;
+  padding-left: 10px;
+  font-size: 100%;
+  line-height: 4vh;
+  outline: none;
+}
+
+header{
+  background-color: var(--primary-color);
+}
+
+h1{
+  margin-top: 0;
+}
+
+.material-icons{
+  padding: 0;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.checkbox-week{
+  background-color: var(--secondary-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--background-color);
+  margin: auto;
+  width: 90%;
+  border-radius: 2vw;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-row-gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .checkbox-week{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .checkbox-week input{
+    float: right;
+    margin-right: 100px;
+    height: 7vh;
+    width: calc(7vh + 20px);
+  }
+
+  .checkbox-week label{
+    height: 7vh;
+    padding-left: 10px;
+    float: left;
+  }
+}
+
+.checkbox-week input{
+  margin: 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .page{
+    grid-template-rows: 9% 9% 79%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'nav nav' 'title title' 'content1 content2';
+  }
+
+  .navigation{
+    grid-area: nav;
+  }
+
+  h3{
+    grid-area: title;
+  }
+
+  button{
+    bottom: 10%;
+  }
+}

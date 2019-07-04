@@ -1,0 +1,52 @@
+header {
+  height: 10vh;
+}
+
+h1 {
+  margin: 0;
+}
+
+.navigation {
+  z-index: 10;
+}
+
+.navigation button {
+  margin: 1%;
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.navigation li {
+  padding-top: 20px;
+  color: var(--background-color);
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: bold;
+  margin: 0;
+}
+.navigation li:hover {
+  color: var(--primary-color);
+}
+
+nav {
+  background-color: var(--secondary-color);
+  position: fixed;
+  top: 0;
+  left: -75%;
+  width: 75%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.show {
+  left: 0;
+}
+
+.hide {
+  background-color: rgba(0, 0, 0, 0.5);
+}
